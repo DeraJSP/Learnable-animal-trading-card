@@ -48,11 +48,34 @@ main {
   padding: 0;
 }
 
-.cards li {
-  border: 5px solid #000;
+.outter {
   border-radius: 20px;
   margin-bottom: 1em;
-  background-color: red;
+}
+
+.snake {
+  border: 5px solid #0BDA51;
+  background-color: #0BDA51;
+}
+
+.bird {
+  border: 5px solid #80461B;
+  background-color: #80461B;
+}
+
+.reptile {
+  border: 5px solid #8A9A5B;
+  background-color: #8A9A5B;
+}
+
+.dog {
+  border: 5px solid #5C4033;
+  background-color: #5C4033;
+}
+
+.ape {
+  border: 5px solid #36454F;
+  background-color: #36454F;
 }
 
 .cards h3 {
@@ -63,17 +86,43 @@ main {
   margin: 0 auto;
   }
 
-.cards .inner {
-  background-color: white;
-  border: 1px solid red;
+.inner {
   border-radius: 20px;
 }
 
+.boa {
+  background-color: #C1E1C1;
+  border: 1px solid #0BDA51;
+}
+
+.hawk {
+  background-color: #D2B48C;
+  border: 1px solid #D2B48C;
+}
+
+.crocodile {
+  background-color: #93C572;
+  border: 1px solid #93C572;
+}
+
+.theo {
+  background-color: #F2D2BD;
+  border: 1px solid #F2D2BD;
+}
+
+.gorilla {
+  background-color: #D3D3D3;
+  border: 1px solid #D3D3D3;
+}
+
 p {
-  padding: 0.1em 0.2em 0.5em 0.2em;
+  padding: 0.5em 0.5em 0.2em 0.5em;
   display: table;
   margin: 0 auto;
+}
 
+div ul {
+    margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
 
