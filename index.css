@@ -11,15 +11,15 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-image: url("images/header-img.jpg");
   color: #fff;
-  border: 5px solid #000;
   margin-bottom: 5em;
   text-align: center;
+  object-fit: cover;
 }
 
 header .title {
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bold;
   padding: 1em;
 }
@@ -81,6 +81,7 @@ main {
 .inner {
   border-radius: 20px;
   place-items: center;
+  border: 10px solid;
 }
 
 .boa {
@@ -129,13 +130,7 @@ div ul {
   display: grid;
   gap: 70px;
   align-items: center;
-  justify-content: center;
 }
-
-.outter, .inner {
-  justify-content: center;
-}
-
 
 img {
   width: 100%;
@@ -163,8 +158,4 @@ header a {
 
 header {
   align-items: center;
-}
-
-header a {
-  border: 0;
 }
