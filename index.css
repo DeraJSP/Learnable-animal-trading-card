@@ -3,7 +3,7 @@
 }
 
 html {
-  font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+  font: 1.2em/1.4 "Libre", sans-serif;
 }
 
 body {
@@ -15,25 +15,11 @@ header {
   color: #fff;
   border: 5px solid #000;
   margin-bottom: 5em;
-}
-
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em 1em;
-  border-top: 1px solid #999;
+  text-align: center;
 }
 
 header .title {
-  font-size: 150%;
-  font-style: italic;
+  font-size: 200%;
   font-weight: bold;
   padding: 1em;
 }
@@ -78,6 +64,12 @@ main {
   background-color: #36454F;
 }
 
+.ant {
+  border: 5px solid #8B0000;
+  background-color: #8B0000;
+}
+
+
 .cards h3 {
   color: #fff;
   margin: 0;
@@ -88,6 +80,7 @@ main {
 
 .inner {
   border-radius: 20px;
+  place-items: center;
 }
 
 .boa {
@@ -115,8 +108,13 @@ main {
   border: 1px solid #D3D3D3;
 }
 
+.weaver {
+  background-color: #FAA0A0;
+  border: 1px solid #FAA0A0;
+}
+
 p {
-  padding: 0.5em 0.5em 0.2em 0.5em;
+  padding: 1em 1em 1em 1em;
   display: table;
   margin: 0 auto;
 }
@@ -127,16 +125,22 @@ div ul {
 
 
 .cards {
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   display: grid;
-  gap: 50px;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
 }
+
+.outter, .inner {
+  justify-content: center;
+}
+
 
 img {
   width: 100%;
-  height: 200px;
+  height: 270px;
   object-fit: cover;
-  display: block;
 }
 
 @media screen and (min-width: 45em) {
@@ -149,20 +153,12 @@ header a {
   }
 
 @media screen and (min-width: 70em) {
-main {
+.cards {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 20px;
-}
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 100px;
+  justify-content: center;
 
-header,
-nav ul {
-  display: flex;
-}
-
-.title, 
-nav li {
-  flex: 1; 
 }
 
 header {
@@ -172,9 +168,3 @@ header {
 header a {
   border: 0;
 }
-
-aside {
-  margin-top: 0.5em;
-}
-
- }
